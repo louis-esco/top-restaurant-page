@@ -1,5 +1,6 @@
 import './style.css';
 import displayHome from './pages/home/home.js';
+import displayMenu from './pages/menu/menu.js';
 
 function clearContainer() {
     const container = document.querySelector('#content');
@@ -11,6 +12,10 @@ function eventListeners() {
     navBtns[0].addEventListener('click', () => {
         clearContainer();
         displayHome();
+    });
+    navBtns[1].addEventListener('click', () => {
+        clearContainer();
+        displayMenu();
     });
 }
 
