@@ -3,7 +3,6 @@ import './home.css'
 
 export default function displayHome() {
     const container = document.querySelector('#content');
-    container.textContent = "";
 
     const home = document.createElement('div');
     home.classList.add('home');
